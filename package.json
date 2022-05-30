@@ -1,20 +1,23 @@
 {
   "name": "rick-y-morty",
+  "homepage": "https://edsonv.github.io/rick-and-morty/",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "^2.0.3"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
